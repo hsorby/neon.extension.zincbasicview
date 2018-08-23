@@ -29,11 +29,12 @@ setup(
     author='H. Sorby',
     author_email='h.sorby@auckland.ac.nz',
     packages=find_packages('src'),
-    package_dir={'':'src'},
+    package_dir={'': 'src'},
     platforms=['any'],
     url='http://pypi.python.org/pypi/neon.extension.zincbasicview/',
-    license='LICENSE',
+    license='Apache Software License',
     description=doc_lines[0],
     classifiers=filter(None, classifiers.split("\n")),
-    long_description=open('README.rst').read()
+    long_description=open('README.rst').read(),
+    requires=['PySide2'],
 )
